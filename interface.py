@@ -1,7 +1,9 @@
 #import QuiZZZ
 import PySimpleGUI as sg
 import random
-
+'''
+Это пока тестовый файл
+'''
 # что будет внутри окна
 # первым описываем кнопку и сразу указываем размер шрифта
 layout = [[sg.Button('Новое число',enable_events=True, key='-FUNCTION-', font='Helvetica 16')],
