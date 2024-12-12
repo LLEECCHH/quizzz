@@ -4,79 +4,19 @@ import sqlite3
 from unittest.mock import Mock
 
 
-db = sqlite3.connect('test_words.db')
+'''Есть база данных на 3000+ слов в файле words.db.'''
+db = sqlite3.connect('words.db')
 c = db.cursor()
-
-'''Какая-то тестовая база данных.
-
-c.execute("""CREATE TABLE test_words (
-	word VARCHAR,
-	translation VARCHAR,
-	complexity CHAR,
-	theme VARCHAR
-	)""")
-
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Apple	", "	Яблоко	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	House	", "	Дом	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Book	", "	Книга	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Table	", "	Стол	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Chair	", "	Стул	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Window	", "	Окно	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Door	", "	Дверь	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Car	", "	Машина	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Tree	", "	Дерево	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Sun	", "	Солнце	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Water	", "	Вода	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Fire	", "	Огонь	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Sky	", "	Небо	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Cloud	", "	Облако	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Rain	", "	Дождь	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Snow	", "	Снег	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Wind	", "	Ветер	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Earth	", "	Земля	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Moon	", "	Луна	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Star	", "	Звезда	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Road	", "	Дорога	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	River	", "	Река	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Lake	", "	Озеро	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Sea	", "	Море	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Ocean	", "	Океан	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Mountain	", "	Гора	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Forest	", "	Лес	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Field	", "	Поле	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Flower	", "	Цветок	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Grass	", "	Трава	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Garden	", "	Сад	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Animal	", "	Животное	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Dog	", "	Собака	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Cat	", "	Кот	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Fish	", "	Рыба	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Bird	", "	Птица	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Horse	", "	Лошадь	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Cow	", "	Корова	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Pig	", "	Свинья	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Chicken	", "	Курица	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Fox	", "	Лиса	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Wolf	", "	Волк	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Bear	", "	Медведь	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Snake	", "	Змея	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Lion	", "	Лев	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Tiger	", "	Тигр	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Elephant	", "	Слон	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Parrot	", "	Попугай	", "	?complexity?	", "	?theme?	")')
-c.execute('INSERT INTO test_words (word, translation, complexity, theme) VALUES ("	Monkey	", "	Обезьяна	", "	?complexity?	", "	?theme?	")')'''
-
-c.execute("SELECT * FROM test_words")
-words = c.fetchall()
-for i in range(len(words)):
-	words[i] = tuple(j.strip() for j in words[i])
-
+c.execute("SELECT * FROM words")
+all_words = c.fetchall()
+for i in range(len(all_words)):
+	all_words[i] = tuple(j.strip() for j in all_words[i])
 db.commit()
 db.close()
 
 
 ask_count = 10
-'''Задаёт количество вопросов в тестировании'''
+'''Задаёт количество вопросов в тесте.'''
 
 
 def menu():
@@ -85,11 +25,11 @@ def menu():
 	> Настройки языка (settings) <
 	> Начать тестирование (start) <
 	> Остановить тестирование - только во время теста (stop) <
-	> Выбрать сложность и тематику слов (complexity_and_theme) <
+	> Выбрать сложность и тематику слов (complexity_and_topic) <
 	> Повторить слова и их перевод (dictionary) <
 	> Помощь (help_pls) <
 	> Выйти из программы (exit) <'''
-	funcs = (menu, settings, start, stop, complexity_and_theme, dictionary, help_pls, exit)
+	funcs = (menu, settings, start, stop, complexity_and_topic, dictionary, help_pls, exit)
 	func = Mock()
 	func()
 
@@ -100,38 +40,51 @@ def settings():
 	> Русский - Английский <
 	> Случайно <'''
 	s = Mock()
+	'''Если выбран варинат "Случайно":'''
+	# s = random.choice('Английский - Русский', 'Русский - Английский')
 	return s
+setts = settings()
+setts = 'Английский - Русский'
 
-
-def complexity_and_theme():
-	global words
+def complexity_and_topic():
+	'''Выбери сложность и тему слов.
+	Сложность:	Тема:
+	> A1 <		> природа <
+	> A2 <		> учёба <
+	> B1 <		> наука <
+	> B2 <		> спорт <
+	> C1 <		> технологии <
+	> C2 <		> черты характера <
+				> животные <
+				> политика и экономика <
+				> домашний быт <
+				> бизнес <'''
+	global all_words
+	c = 'B2'	# Выбранная сложность
+	t = 'природа'	# Выбранная тема
+	words = [item for item in all_words if (item[2] == c) and (item[3] == t)]
 	processing = []
 	on_fix = []
 	repeat = []
-	new = [item[1] for item in words]
+	new = [item[1] if setts == 'Русский - Английский' else item[0] for item in words]
 	return (words, new, processing, on_fix, repeat)
 
 
-words, new, processing, on_fix, repeat = complexity_and_theme()
-'''Имеется список: words = [(word, transl, compl, theme), (word, transl, compl, theme), (word, transl, compl, theme), ...].
-В тестовом файле все слова одних пока что неопределённых сложности и темы.'''
+words, new, processing, on_fix, repeat = complexity_and_topic()
+'''Имеется список: words = [(word, transl, compl, topic), (word, transl, compl, topic), (word, transl, compl, topic), ...].'''
 def start():
-	setts = 'Русский - Английский'
+	'''Применение настроек к тестировующей системе.'''
 	dct = {}
 	for item in words:
 		s = [item[0], item[1]]
 		if setts == 'Английский - Русский':
 			dct[s[0]] = s[-1].rstrip()
-		elif setts == 'Русский - Английский':
-			dct[s[-1].rstrip()] = s[0]
 		else:
-			num = random.randint(0, 1)
-			if num == 0:
-				dct[s[0]] = s[-1].rstrip()
-			else:
-				dct[s[-1].rstrip()] = s[0]
+			dct[s[-1].rstrip()] = s[0]
 	dict_keys = list(dct)
-	'''new: Новое - одинаковый шанс для всех (10%)
+
+	'''Распределение шансов выпадения слов.
+	new: Новое - одинаковый шанс для всех (10%)
 	processing: На отработке (выученное недавно) - повышенный шанс (15%)
 	on_fix: На исправлении (больше всего ошибок) - сильно повышенный шанс (70%)
 	repeat: На повторении (меньше всего ошибок) - пониженный шанс (5%)'''
@@ -154,9 +107,11 @@ def start():
 			 15: 15 / cnt_15 if cnt_15 > 0 else 0, \
 			 70: 70 / cnt_70 if cnt_70 > 0 else 0}
 	chances = [changes[i] for i in chances]
+
+	'''Работа самой тестирующей системы.
+	ask_count - количество вопросов в тесте. Задавалась в начале.'''
 	dict_translations = list(dct.values())
 	score = 0
-
 	for _ in range(ask_count):
 		word = random.choices(dict_keys, weights = chances, k = 1)[0]
 		s = dict_translations.copy()
@@ -207,7 +162,8 @@ def start():
 				flag = 1
 		if flag != 1:
 			dict_keys.remove(word)
-	'''f'Правильных ответов: {score}/{ask_count}.'''
+	'''Нужно вывести:
+	Правильных ответов: {score}/{ask_count}.'''
 	menu()
 
 
@@ -220,7 +176,7 @@ def stop():
 
 def dictionary():
 	'''Вот твой текущий словарь.
-	Здесь выводится словарь слов по выбранной ранее сложности и тематике.
+	Здесь выводится словарь слов (слова и переводы хранятся в списке words) по выбранной ранее сложности и тематике.
 	> Вернуться в главное меню <'''
 	menu()
 
