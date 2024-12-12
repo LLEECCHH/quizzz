@@ -1,7 +1,0 @@
-дом - house
-машина - car
-ручка - pen
-урок - lesson
-солнце - sun
-луна - moon
-стол - table
