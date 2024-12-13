@@ -5,22 +5,36 @@ from unittest.mock import Mock
 
 
 '''Есть база данных на 3000+ слов в файле words.db.'''
-db = sqlite3.connect('words.db')
-c = db.cursor()
-c.execute("SELECT * FROM words")
-all_words = c.fetchall()
-for i in range(len(all_words)):
-	all_words[i] = tuple(j.strip() for j in all_words[i])
-db.commit()
-db.close()
+def dict_db():
+	'''
+	Подключается к базе данных words.db, берет из нее все строки и возвращает их списком.
+
+ 	:returns: Список строк из базы данных words.db
+ 	:rtype: list
+ 	:raises ValueError: Если возникает ошибка при открытии базы данных
+ 	'''
+	try:
+		db = sqlite3.connect('words.db')
+	except Exception as e:
+		return f'Ошибка при открытии файла: {e}'
+	c = db.cursor()
+	c.execute("SELECT * FROM words")
+	all_words = c.fetchall()
+	for i in range(len(all_words)):
+		all_words[i] = tuple(j.strip() for j in all_words[i])
+	db.commit()
+	db.close()
+	return all_words
+all_words = dict_db()
 
 
+'''Переменная ask_count задаёт количество вопросов в одном тесте.'''
 ask_count = 10
-'''Задаёт количество вопросов в тесте.'''
 
 
 def menu():
-	'''Вот список доступных функций:
+	'''
+	Список доступных функций:
 	> Вернуться в главное меню (menu) <
 	> Настройки языка (settings) <
 	> Начать тестирование (start) <
@@ -28,26 +42,28 @@ def menu():
 	> Выбрать сложность и тематику слов (complexity_and_topic) <
 	> Повторить слова и их перевод (dictionary) <
 	> Помощь (help_pls) <
-	> Выйти из программы (exit) <'''
+	> Выйти из программы (exit) <
+	'''
 	funcs = (menu, settings, start, stop, complexity_and_topic, dictionary, help_pls, exit)
 	func = Mock()
 	func()
 
 
 def settings():
-	'''Выбери режим перевода:
+	'''
+	Возвращает одну из настроек:
 	> Английский - Русский <
 	> Русский - Английский <
-	> Случайно <'''
-	s = Mock()
-	'''Если выбран варинат "Случайно":'''
-	# s = random.choice('Английский - Русский', 'Русский - Английский')
+	'''
+	var1, var2, var3 = 'Английский - Русский', 'Русский - Английский', 'Случайно'
+	yield var1, var2, var3
 	return s
 setts = settings()
-setts = 'Английский - Русский'
+
 
 def complexity_and_topic():
-	'''Выбери сложность и тему слов.
+	'''
+	Возвращает одну тему и одну сложность для последующих тестов из следующих списков:
 	Сложность:	Тема:
 	> A1 <		> природа <
 	> A2 <		> учёба <
@@ -55,11 +71,11 @@ def complexity_and_topic():
 	> B2 <		> спорт <
 	> C1 <		> технологии <
 	> C2 <		> черты характера <
-				> животные <
-				> политика и экономика <
-				> домашний быт <
-				> бизнес <'''
-	global all_words
+			> животные <
+			> политика и экономика <
+			> домашний быт <
+			> бизнес <
+	'''
 	c = 'B2'	# Выбранная сложность
 	t = 'природа'	# Выбранная тема
 	words = [item for item in all_words if (item[2] == c) and (item[3] == t)]
@@ -67,12 +83,11 @@ def complexity_and_topic():
 	on_fix = []
 	repeat = []
 	new = [item[1] if setts == 'Русский - Английский' else item[0] for item in words]
-	return (words, new, processing, on_fix, repeat)
+	return (c, t, words, new, processing, on_fix, repeat)
 
 
-words, new, processing, on_fix, repeat = complexity_and_topic()
-'''Имеется список: words = [(word, transl, compl, topic), (word, transl, compl, topic), (word, transl, compl, topic), ...].'''
-def start():
+complexity, topic, words, new, processing, on_fix, repeat = complexity_and_topic()
+def start(complexity='A1', topic='природа', setts='Английский - Русский'):
 	'''Применение настроек к тестировующей системе.'''
 	dct = {}
 	for item in words:
@@ -123,6 +138,8 @@ def start():
 			if variants[i] == 0:
 				variants[i] = s.pop(random.randint(0, len(s) - 1))
 		var1, var2, var3, var4 = variants	   # Варианты ответов
+		yield word, var1, var2, var3, var4, right_answer
+		
 		# print(f'Переведи слово: {word}. 1) {var1}; 2) {var2}; 3) {var3}; 4) {var4}.')
 		# answer = input()
 		answer = Mock()
