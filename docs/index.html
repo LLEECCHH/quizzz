@@ -1,0 +1,3066 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>interface</title>
+    <meta name="generator" content="pydoctor 24.11.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          interface <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="index.html" class="internal-link" title="This module">interface</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#changedicttomenu" class="internal-link" title="interface.changedicttomenu">changedicttomenu</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#changeendtomenu" class="internal-link" title="interface.changeendtomenu">changeendtomenu</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#changemenutodict" class="internal-link" title="interface.changemenutodict">changemenutodict</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#changemenutosettings" class="internal-link" title="interface.changemenutosettings">changemenutosettings</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#changemenutotest" class="internal-link" title="interface.changemenutotest">changemenutotest</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#changesettingstomenu" class="internal-link" title="interface.changesettingstomenu">changesettingstomenu</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#changetesttomenu" class="internal-link" title="interface.changetesttomenu">changetesttomenu</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dictionary" class="internal-link" title="interface.dictionary">dictionary</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#menu" class="internal-link" title="interface.menu">menu</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#nextword" class="internal-link" title="interface.nextword">nextword</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#selectword" class="internal-link" title="interface.selectword">selectword</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings" class="internal-link" title="interface.settings">settings</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start" class="internal-link" title="interface.start">start</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#complexity_list" class="internal-link" title="interface.complexity_list">complexity<wbr></wbr>_list</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#deffont" class="internal-link" title="interface.deffont">deffont</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dict_back_button" class="internal-link" title="interface.dict_back_button">dict<wbr></wbr>_back<wbr></wbr>_button</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dict_button_frame" class="internal-link" title="interface.dict_button_frame">dict<wbr></wbr>_button<wbr></wbr>_frame</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dict_frame" class="internal-link" title="interface.dict_frame">dict<wbr></wbr>_frame</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dict_label" class="internal-link" title="interface.dict_label">dict<wbr></wbr>_label</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dict_listbox" class="internal-link" title="interface.dict_listbox">dict<wbr></wbr>_listbox</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dict_scroll" class="internal-link" title="interface.dict_scroll">dict<wbr></wbr>_scroll</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dict_words" class="internal-link" title="interface.dict_words">dict<wbr></wbr>_words</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dictionary_button" class="internal-link" title="interface.dictionary_button">dictionary<wbr></wbr>_button</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#end_screen_frame" class="internal-link" title="interface.end_screen_frame">end<wbr></wbr>_screen<wbr></wbr>_frame</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#end_screen_label" class="internal-link" title="interface.end_screen_label">end<wbr></wbr>_screen<wbr></wbr>_label</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#end_screen_menu_button" class="internal-link" title="interface.end_screen_menu_button">end<wbr></wbr>_screen<wbr></wbr>_menu<wbr></wbr>_button</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#end_screen_stat_label" class="internal-link" title="interface.end_screen_stat_label">end<wbr></wbr>_screen<wbr></wbr>_stat<wbr></wbr>_label</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#frame_bottom" class="internal-link" title="interface.frame_bottom">frame<wbr></wbr>_bottom</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#frame_top" class="internal-link" title="interface.frame_top">frame<wbr></wbr>_top</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#menu_buttom_frame" class="internal-link" title="interface.menu_buttom_frame">menu<wbr></wbr>_buttom<wbr></wbr>_frame</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#menu_button" class="internal-link" title="interface.menu_button">menu<wbr></wbr>_button</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#menu_frame" class="internal-link" title="interface.menu_frame">menu<wbr></wbr>_frame</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#next_word_button" class="internal-link" title="interface.next_word_button">next<wbr></wbr>_word<wbr></wbr>_button</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#questionnumber" class="internal-link" title="interface.questionnumber">questionnumber</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_button" class="internal-link" title="interface.settings_button">settings<wbr></wbr>_button</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_button_frame" class="internal-link" title="interface.settings_button_frame">settings<wbr></wbr>_button<wbr></wbr>_frame</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_button_frame2" class="internal-link" title="interface.settings_button_frame2">settings<wbr></wbr>_button<wbr></wbr>_frame2</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_combobox1" class="internal-link" title="interface.settings_combobox1">settings<wbr></wbr>_combobox1</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_combobox2" class="internal-link" title="interface.settings_combobox2">settings<wbr></wbr>_combobox2</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_comp_label" class="internal-link" title="interface.settings_comp_label">settings<wbr></wbr>_comp<wbr></wbr>_label</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_count_label" class="internal-link" title="interface.settings_count_label">settings<wbr></wbr>_count<wbr></wbr>_label</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_frame" class="internal-link" title="interface.settings_frame">settings<wbr></wbr>_frame</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_main_label" class="internal-link" title="interface.settings_main_label">settings<wbr></wbr>_main<wbr></wbr>_label</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_mode_label" class="internal-link" title="interface.settings_mode_label">settings<wbr></wbr>_mode<wbr></wbr>_label</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_ok_button" class="internal-link" title="interface.settings_ok_button">settings<wbr></wbr>_ok<wbr></wbr>_button</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_radiobutton1" class="internal-link" title="interface.settings_radiobutton1">settings<wbr></wbr>_radiobutton1</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_radiobutton2" class="internal-link" title="interface.settings_radiobutton2">settings<wbr></wbr>_radiobutton2</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_radiobutton3" class="internal-link" title="interface.settings_radiobutton3">settings<wbr></wbr>_radiobutton3</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_spinbox" class="internal-link" title="interface.settings_spinbox">settings<wbr></wbr>_spinbox</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_theme_label" class="internal-link" title="interface.settings_theme_label">settings<wbr></wbr>_theme<wbr></wbr>_label</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start_button" class="internal-link" title="interface.start_button">start<wbr></wbr>_button</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start_label" class="internal-link" title="interface.start_label">start<wbr></wbr>_label</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stats" class="internal-link" title="interface.stats">stats</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#style" class="internal-link" title="interface.style">style</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_button_1" class="internal-link" title="interface.test_button_1">test<wbr></wbr>_button<wbr></wbr>_1</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_button_2" class="internal-link" title="interface.test_button_2">test<wbr></wbr>_button<wbr></wbr>_2</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_button_3" class="internal-link" title="interface.test_button_3">test<wbr></wbr>_button<wbr></wbr>_3</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_button_4" class="internal-link" title="interface.test_button_4">test<wbr></wbr>_button<wbr></wbr>_4</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_complexity" class="internal-link" title="interface.test_complexity">test<wbr></wbr>_complexity</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_count" class="internal-link" title="interface.test_count">test<wbr></wbr>_count</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_frame" class="internal-link" title="interface.test_frame">test<wbr></wbr>_frame</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_label" class="internal-link" title="interface.test_label">test<wbr></wbr>_label</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_mode" class="internal-link" title="interface.test_mode">test<wbr></wbr>_mode</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_theme" class="internal-link" title="interface.test_theme">test<wbr></wbr>_theme</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_word" class="internal-link" title="interface.test_word">test<wbr></wbr>_word</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_word_label" class="internal-link" title="interface.test_word_label">test<wbr></wbr>_word<wbr></wbr>_label</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#theme_list" class="internal-link" title="interface.theme_list">theme<wbr></wbr>_list</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#var1" class="internal-link" title="interface.var1">var1</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#var2" class="internal-link" title="interface.var2">var2</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#var3" class="internal-link" title="interface.var3">var3</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#var4" class="internal-link" title="interface.var4">var4</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#window" class="internal-link" title="interface.window">window</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#word_frame" class="internal-link" title="interface.word_frame">word<wbr></wbr>_frame</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="index.html" class="internal-link">interface</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+          <p></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id1">
+  
+  
+  <tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#changedicttomenu" class="internal-link" title="interface.changedicttomenu">changedicttomenu</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#changeendtomenu" class="internal-link" title="interface.changeendtomenu">changeendtomenu</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#changemenutodict" class="internal-link" title="interface.changemenutodict">changemenutodict</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#changemenutosettings" class="internal-link" title="interface.changemenutosettings">changemenutosettings</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#changemenutotest" class="internal-link" title="interface.changemenutotest">changemenutotest</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#changesettingstomenu" class="internal-link" title="interface.changesettingstomenu">changesettingstomenu</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#changetesttomenu" class="internal-link" title="interface.changetesttomenu">changetesttomenu</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#dictionary" class="internal-link" title="interface.dictionary">dictionary</a></code></td>
+    <td>Функция отрисовки всех виджетов для словаря</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#menu" class="internal-link" title="interface.menu">menu</a></code></td>
+    <td>Функция отрисовки всех виджетов для главного меню</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#nextword" class="internal-link" title="interface.nextword">nextword</a></code></td>
+    <td>Функция выдачи следующего вопроса</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#selectword" class="internal-link" title="interface.selectword">selectword</a></code></td>
+    <td>Функция проверки правильности ответа</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#settings" class="internal-link" title="interface.settings">settings</a></code></td>
+    <td>Функция отрисовки всех виджетов для настроек</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#start" class="internal-link" title="interface.start">start</a></code></td>
+    <td>Функция отрисовки всех виджетов для теста</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#complexity_list" class="internal-link" title="interface.complexity_list">complexity<wbr></wbr>_list</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#deffont" class="internal-link" title="interface.deffont">deffont</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#dict_back_button" class="internal-link" title="interface.dict_back_button">dict<wbr></wbr>_back<wbr></wbr>_button</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#dict_button_frame" class="internal-link" title="interface.dict_button_frame">dict<wbr></wbr>_button<wbr></wbr>_frame</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#dict_frame" class="internal-link" title="interface.dict_frame">dict<wbr></wbr>_frame</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#dict_label" class="internal-link" title="interface.dict_label">dict<wbr></wbr>_label</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#dict_listbox" class="internal-link" title="interface.dict_listbox">dict<wbr></wbr>_listbox</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#dict_scroll" class="internal-link" title="interface.dict_scroll">dict<wbr></wbr>_scroll</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#dict_words" class="internal-link" title="interface.dict_words">dict<wbr></wbr>_words</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#dictionary_button" class="internal-link" title="interface.dictionary_button">dictionary<wbr></wbr>_button</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#end_screen_frame" class="internal-link" title="interface.end_screen_frame">end<wbr></wbr>_screen<wbr></wbr>_frame</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#end_screen_label" class="internal-link" title="interface.end_screen_label">end<wbr></wbr>_screen<wbr></wbr>_label</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#end_screen_menu_button" class="internal-link" title="interface.end_screen_menu_button">end<wbr></wbr>_screen<wbr></wbr>_menu<wbr></wbr>_button</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#end_screen_stat_label" class="internal-link" title="interface.end_screen_stat_label">end<wbr></wbr>_screen<wbr></wbr>_stat<wbr></wbr>_label</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#frame_bottom" class="internal-link" title="interface.frame_bottom">frame<wbr></wbr>_bottom</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#frame_top" class="internal-link" title="interface.frame_top">frame<wbr></wbr>_top</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#menu_buttom_frame" class="internal-link" title="interface.menu_buttom_frame">menu<wbr></wbr>_buttom<wbr></wbr>_frame</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#menu_button" class="internal-link" title="interface.menu_button">menu<wbr></wbr>_button</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#menu_frame" class="internal-link" title="interface.menu_frame">menu<wbr></wbr>_frame</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#next_word_button" class="internal-link" title="interface.next_word_button">next<wbr></wbr>_word<wbr></wbr>_button</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#questionnumber" class="internal-link" title="interface.questionnumber">questionnumber</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_button" class="internal-link" title="interface.settings_button">settings<wbr></wbr>_button</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_button_frame" class="internal-link" title="interface.settings_button_frame">settings<wbr></wbr>_button<wbr></wbr>_frame</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_button_frame2" class="internal-link" title="interface.settings_button_frame2">settings<wbr></wbr>_button<wbr></wbr>_frame2</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_combobox1" class="internal-link" title="interface.settings_combobox1">settings<wbr></wbr>_combobox1</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_combobox2" class="internal-link" title="interface.settings_combobox2">settings<wbr></wbr>_combobox2</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_comp_label" class="internal-link" title="interface.settings_comp_label">settings<wbr></wbr>_comp<wbr></wbr>_label</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_count_label" class="internal-link" title="interface.settings_count_label">settings<wbr></wbr>_count<wbr></wbr>_label</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_frame" class="internal-link" title="interface.settings_frame">settings<wbr></wbr>_frame</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_main_label" class="internal-link" title="interface.settings_main_label">settings<wbr></wbr>_main<wbr></wbr>_label</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_mode_label" class="internal-link" title="interface.settings_mode_label">settings<wbr></wbr>_mode<wbr></wbr>_label</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_ok_button" class="internal-link" title="interface.settings_ok_button">settings<wbr></wbr>_ok<wbr></wbr>_button</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_radiobutton1" class="internal-link" title="interface.settings_radiobutton1">settings<wbr></wbr>_radiobutton1</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_radiobutton2" class="internal-link" title="interface.settings_radiobutton2">settings<wbr></wbr>_radiobutton2</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_radiobutton3" class="internal-link" title="interface.settings_radiobutton3">settings<wbr></wbr>_radiobutton3</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_spinbox" class="internal-link" title="interface.settings_spinbox">settings<wbr></wbr>_spinbox</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#settings_theme_label" class="internal-link" title="interface.settings_theme_label">settings<wbr></wbr>_theme<wbr></wbr>_label</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#start_button" class="internal-link" title="interface.start_button">start<wbr></wbr>_button</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#start_label" class="internal-link" title="interface.start_label">start<wbr></wbr>_label</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#stats" class="internal-link" title="interface.stats">stats</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#style" class="internal-link" title="interface.style">style</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_button_1" class="internal-link" title="interface.test_button_1">test<wbr></wbr>_button<wbr></wbr>_1</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_button_2" class="internal-link" title="interface.test_button_2">test<wbr></wbr>_button<wbr></wbr>_2</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_button_3" class="internal-link" title="interface.test_button_3">test<wbr></wbr>_button<wbr></wbr>_3</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_button_4" class="internal-link" title="interface.test_button_4">test<wbr></wbr>_button<wbr></wbr>_4</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_complexity" class="internal-link" title="interface.test_complexity">test<wbr></wbr>_complexity</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_count" class="internal-link" title="interface.test_count">test<wbr></wbr>_count</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_frame" class="internal-link" title="interface.test_frame">test<wbr></wbr>_frame</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_label" class="internal-link" title="interface.test_label">test<wbr></wbr>_label</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_mode" class="internal-link" title="interface.test_mode">test<wbr></wbr>_mode</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_theme" class="internal-link" title="interface.test_theme">test<wbr></wbr>_theme</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_word" class="internal-link" title="interface.test_word">test<wbr></wbr>_word</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_word_label" class="internal-link" title="interface.test_word_label">test<wbr></wbr>_word<wbr></wbr>_label</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#theme_list" class="internal-link" title="interface.theme_list">theme<wbr></wbr>_list</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#var1" class="internal-link" title="interface.var1">var1</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#var2" class="internal-link" title="interface.var2">var2</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#var3" class="internal-link" title="interface.var3">var3</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#var4" class="internal-link" title="interface.var4">var4</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#window" class="internal-link" title="interface.window">window</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#word_frame" class="internal-link" title="interface.word_frame">word<wbr></wbr>_frame</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basefunction">
+  
+  
+  <a name="interface.changedicttomenu">
+    
+  </a>
+  <a name="changedicttomenu">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">changedicttomenu</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#changedicttomenu" title="interface.changedicttomenu">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="interface.changeendtomenu">
+    
+  </a>
+  <a name="changeendtomenu">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">changeendtomenu</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#changeendtomenu" title="interface.changeendtomenu">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="interface.changemenutodict">
+    
+  </a>
+  <a name="changemenutodict">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">changemenutodict</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#changemenutodict" title="interface.changemenutodict">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="interface.changemenutosettings">
+    
+  </a>
+  <a name="changemenutosettings">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">changemenutosettings</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#changemenutosettings" title="interface.changemenutosettings">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="interface.changemenutotest">
+    
+  </a>
+  <a name="changemenutotest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">changemenutotest</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#changemenutotest" title="interface.changemenutotest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="interface.changesettingstomenu">
+    
+  </a>
+  <a name="changesettingstomenu">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">changesettingstomenu</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#changesettingstomenu" title="interface.changesettingstomenu">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="interface.changetesttomenu">
+    
+  </a>
+  <a name="changetesttomenu">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">changetesttomenu</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#changetesttomenu" title="interface.changetesttomenu">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="interface.dictionary">
+    
+  </a>
+  <a name="dictionary">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">dictionary</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#dictionary" title="interface.dictionary">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция отрисовки всех виджетов для словаря</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="interface.menu">
+    
+  </a>
+  <a name="menu">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">menu</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#menu" title="interface.menu">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция отрисовки всех виджетов для главного меню</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="interface.nextword">
+    
+  </a>
+  <a name="nextword">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">nextword</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#nextword" title="interface.nextword">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция выдачи следующего вопроса</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="interface.selectword">
+    
+  </a>
+  <a name="selectword">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">selectword</span><span class="function-signature">(arg, button)</span>:
+    
+    <a class="headerLink" href="#selectword" title="interface.selectword">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция проверки правильности ответа</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="interface.settings">
+    
+  </a>
+  <a name="settings">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">settings</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#settings" title="interface.settings">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция отрисовки всех виджетов для настроек</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="interface.start">
+    
+  </a>
+  <a name="start">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">start</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#start" title="interface.start">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция отрисовки всех виджетов для теста</p></div>
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.complexity_list">
+    
+  </a>
+  <a name="complexity_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">complexity_list</span>: <code>list[<wbr></wbr>str]</code> =
+    
+    <a class="headerLink" href="#complexity_list" title="interface.complexity_list">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.deffont">
+    
+  </a>
+  <a name="deffont">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">deffont</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#deffont" title="interface.deffont">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.dict_back_button">
+    
+  </a>
+  <a name="dict_back_button">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dict_back_button</span> =
+    
+    <a class="headerLink" href="#dict_back_button" title="interface.dict_back_button">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.dict_button_frame">
+    
+  </a>
+  <a name="dict_button_frame">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dict_button_frame</span> =
+    
+    <a class="headerLink" href="#dict_button_frame" title="interface.dict_button_frame">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.dict_frame">
+    
+  </a>
+  <a name="dict_frame">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dict_frame</span> =
+    
+    <a class="headerLink" href="#dict_frame" title="interface.dict_frame">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.dict_label">
+    
+  </a>
+  <a name="dict_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dict_label</span> =
+    
+    <a class="headerLink" href="#dict_label" title="interface.dict_label">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.dict_listbox">
+    
+  </a>
+  <a name="dict_listbox">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dict_listbox</span> =
+    
+    <a class="headerLink" href="#dict_listbox" title="interface.dict_listbox">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.dict_scroll">
+    
+  </a>
+  <a name="dict_scroll">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dict_scroll</span> =
+    
+    <a class="headerLink" href="#dict_scroll" title="interface.dict_scroll">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.dict_words">
+    
+  </a>
+  <a name="dict_words">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dict_words</span> =
+    
+    <a class="headerLink" href="#dict_words" title="interface.dict_words">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.dictionary_button">
+    
+  </a>
+  <a name="dictionary_button">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dictionary_button</span> =
+    
+    <a class="headerLink" href="#dictionary_button" title="interface.dictionary_button">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.end_screen_frame">
+    
+  </a>
+  <a name="end_screen_frame">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">end_screen_frame</span> =
+    
+    <a class="headerLink" href="#end_screen_frame" title="interface.end_screen_frame">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.end_screen_label">
+    
+  </a>
+  <a name="end_screen_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">end_screen_label</span> =
+    
+    <a class="headerLink" href="#end_screen_label" title="interface.end_screen_label">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.end_screen_menu_button">
+    
+  </a>
+  <a name="end_screen_menu_button">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">end_screen_menu_button</span> =
+    
+    <a class="headerLink" href="#end_screen_menu_button" title="interface.end_screen_menu_button">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.end_screen_stat_label">
+    
+  </a>
+  <a name="end_screen_stat_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">end_screen_stat_label</span> =
+    
+    <a class="headerLink" href="#end_screen_stat_label" title="interface.end_screen_stat_label">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.frame_bottom">
+    
+  </a>
+  <a name="frame_bottom">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">frame_bottom</span> =
+    
+    <a class="headerLink" href="#frame_bottom" title="interface.frame_bottom">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.frame_top">
+    
+  </a>
+  <a name="frame_top">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">frame_top</span> =
+    
+    <a class="headerLink" href="#frame_top" title="interface.frame_top">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.menu_buttom_frame">
+    
+  </a>
+  <a name="menu_buttom_frame">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">menu_buttom_frame</span> =
+    
+    <a class="headerLink" href="#menu_buttom_frame" title="interface.menu_buttom_frame">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.menu_button">
+    
+  </a>
+  <a name="menu_button">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">menu_button</span> =
+    
+    <a class="headerLink" href="#menu_button" title="interface.menu_button">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.menu_frame">
+    
+  </a>
+  <a name="menu_frame">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">menu_frame</span> =
+    
+    <a class="headerLink" href="#menu_frame" title="interface.menu_frame">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.next_word_button">
+    
+  </a>
+  <a name="next_word_button">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">next_word_button</span> =
+    
+    <a class="headerLink" href="#next_word_button" title="interface.next_word_button">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.questionnumber">
+    
+  </a>
+  <a name="questionnumber">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">questionnumber</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#questionnumber" title="interface.questionnumber">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_button">
+    
+  </a>
+  <a name="settings_button">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_button</span> =
+    
+    <a class="headerLink" href="#settings_button" title="interface.settings_button">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_button_frame">
+    
+  </a>
+  <a name="settings_button_frame">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_button_frame</span> =
+    
+    <a class="headerLink" href="#settings_button_frame" title="interface.settings_button_frame">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_button_frame2">
+    
+  </a>
+  <a name="settings_button_frame2">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_button_frame2</span> =
+    
+    <a class="headerLink" href="#settings_button_frame2" title="interface.settings_button_frame2">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_combobox1">
+    
+  </a>
+  <a name="settings_combobox1">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_combobox1</span> =
+    
+    <a class="headerLink" href="#settings_combobox1" title="interface.settings_combobox1">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_combobox2">
+    
+  </a>
+  <a name="settings_combobox2">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_combobox2</span> =
+    
+    <a class="headerLink" href="#settings_combobox2" title="interface.settings_combobox2">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_comp_label">
+    
+  </a>
+  <a name="settings_comp_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_comp_label</span> =
+    
+    <a class="headerLink" href="#settings_comp_label" title="interface.settings_comp_label">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_count_label">
+    
+  </a>
+  <a name="settings_count_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_count_label</span> =
+    
+    <a class="headerLink" href="#settings_count_label" title="interface.settings_count_label">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_frame">
+    
+  </a>
+  <a name="settings_frame">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_frame</span> =
+    
+    <a class="headerLink" href="#settings_frame" title="interface.settings_frame">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_main_label">
+    
+  </a>
+  <a name="settings_main_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_main_label</span> =
+    
+    <a class="headerLink" href="#settings_main_label" title="interface.settings_main_label">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_mode_label">
+    
+  </a>
+  <a name="settings_mode_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_mode_label</span> =
+    
+    <a class="headerLink" href="#settings_mode_label" title="interface.settings_mode_label">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_ok_button">
+    
+  </a>
+  <a name="settings_ok_button">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_ok_button</span> =
+    
+    <a class="headerLink" href="#settings_ok_button" title="interface.settings_ok_button">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_radiobutton1">
+    
+  </a>
+  <a name="settings_radiobutton1">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_radiobutton1</span> =
+    
+    <a class="headerLink" href="#settings_radiobutton1" title="interface.settings_radiobutton1">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_radiobutton2">
+    
+  </a>
+  <a name="settings_radiobutton2">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_radiobutton2</span> =
+    
+    <a class="headerLink" href="#settings_radiobutton2" title="interface.settings_radiobutton2">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_radiobutton3">
+    
+  </a>
+  <a name="settings_radiobutton3">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_radiobutton3</span> =
+    
+    <a class="headerLink" href="#settings_radiobutton3" title="interface.settings_radiobutton3">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_spinbox">
+    
+  </a>
+  <a name="settings_spinbox">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_spinbox</span> =
+    
+    <a class="headerLink" href="#settings_spinbox" title="interface.settings_spinbox">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.settings_theme_label">
+    
+  </a>
+  <a name="settings_theme_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">settings_theme_label</span> =
+    
+    <a class="headerLink" href="#settings_theme_label" title="interface.settings_theme_label">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.start_button">
+    
+  </a>
+  <a name="start_button">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">start_button</span> =
+    
+    <a class="headerLink" href="#start_button" title="interface.start_button">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.start_label">
+    
+  </a>
+  <a name="start_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">start_label</span> =
+    
+    <a class="headerLink" href="#start_label" title="interface.start_label">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.stats">
+    
+  </a>
+  <a name="stats">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">stats</span> =
+    
+    <a class="headerLink" href="#stats" title="interface.stats">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.style">
+    
+  </a>
+  <a name="style">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">style</span> =
+    
+    <a class="headerLink" href="#style" title="interface.style">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.test_button_1">
+    
+  </a>
+  <a name="test_button_1">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_button_1</span> =
+    
+    <a class="headerLink" href="#test_button_1" title="interface.test_button_1">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.test_button_2">
+    
+  </a>
+  <a name="test_button_2">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_button_2</span> =
+    
+    <a class="headerLink" href="#test_button_2" title="interface.test_button_2">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.test_button_3">
+    
+  </a>
+  <a name="test_button_3">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_button_3</span> =
+    
+    <a class="headerLink" href="#test_button_3" title="interface.test_button_3">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.test_button_4">
+    
+  </a>
+  <a name="test_button_4">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_button_4</span> =
+    
+    <a class="headerLink" href="#test_button_4" title="interface.test_button_4">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.test_complexity">
+    
+  </a>
+  <a name="test_complexity">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_complexity</span> =
+    
+    <a class="headerLink" href="#test_complexity" title="interface.test_complexity">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.test_count">
+    
+  </a>
+  <a name="test_count">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_count</span> =
+    
+    <a class="headerLink" href="#test_count" title="interface.test_count">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.test_frame">
+    
+  </a>
+  <a name="test_frame">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_frame</span> =
+    
+    <a class="headerLink" href="#test_frame" title="interface.test_frame">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.test_label">
+    
+  </a>
+  <a name="test_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_label</span> =
+    
+    <a class="headerLink" href="#test_label" title="interface.test_label">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.test_mode">
+    
+  </a>
+  <a name="test_mode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_mode</span> =
+    
+    <a class="headerLink" href="#test_mode" title="interface.test_mode">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.test_theme">
+    
+  </a>
+  <a name="test_theme">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_theme</span> =
+    
+    <a class="headerLink" href="#test_theme" title="interface.test_theme">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.test_word">
+    
+  </a>
+  <a name="test_word">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_word</span> =
+    
+    <a class="headerLink" href="#test_word" title="interface.test_word">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.test_word_label">
+    
+  </a>
+  <a name="test_word_label">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_word_label</span> =
+    
+    <a class="headerLink" href="#test_word_label" title="interface.test_word_label">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.theme_list">
+    
+  </a>
+  <a name="theme_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">theme_list</span> =
+    
+    <a class="headerLink" href="#theme_list" title="interface.theme_list">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.var1">
+    
+  </a>
+  <a name="var1">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">var1</span> =
+    
+    <a class="headerLink" href="#var1" title="interface.var1">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.var2">
+    
+  </a>
+  <a name="var2">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">var2</span> =
+    
+    <a class="headerLink" href="#var2" title="interface.var2">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.var3">
+    
+  </a>
+  <a name="var3">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">var3</span> =
+    
+    <a class="headerLink" href="#var3" title="interface.var3">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.var4">
+    
+  </a>
+  <a name="var4">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">var4</span> =
+    
+    <a class="headerLink" href="#var4" title="interface.var4">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.window">
+    
+  </a>
+  <a name="window">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">window</span> =
+    
+    <a class="headerLink" href="#window" title="interface.window">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="interface.word_frame">
+    
+  </a>
+  <a name="word_frame">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">word_frame</span> =
+    
+    <a class="headerLink" href="#word_frame" title="interface.word_frame">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for interface,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    24.11.1 at 2024-12-14 13:52:59.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,5 @@
+# Standard library modules
+tkinter
+random
+sqlite3
+unittest
