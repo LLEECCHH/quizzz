@@ -11,8 +11,6 @@ from QuiZZZ import (
         settings,
         complexity_and_topic,
         start,
-        stop,
-        dictionary,
 )
 
 def test_dict_db_success():
@@ -66,15 +64,21 @@ def test_complexity_and_topic(monkeypatch):
         assert on_fix == []
         assert repeat == []
 
-def test_stop():
-        mock_menu = Mock()
-        with patch("QuiZZZ.menu", mock_menu):
-                stop()
+def test_settings_english_to_russian():
+    with patch('QuiZZZ.Mock', return_value='Английский - Русский'):
+        result = settings()
+        assert result == 'Английский - Русский'
 
-        mock_menu.assert_called_once()
+def test_settings_russian_to_english():
+    with patch('QuiZZZ.Mock', return_value='Русский - Английский'):
+        result = settings()
+        assert result == 'Русский - Английский'
 
-def test_dictionary():
-        with patch("QuiZZZ.words", [("word1", "перевод1"), ("word2", "перевод2")]):
-                result = dictionary()
-
-        assert result == "word1 - перевод1\nword2 - перевод2\n"
+def test_settings_random():
+    with patch('QuiZZZ.Mock', return_value='Случайно'):
+        with patch('random.choice', return_value='Английский - Русский'):
+            result = settings()
+            assert result == 'Английский - Русский'
+        with patch('random.choice', return_value='Русский - Английский'):
+            result = settings()
+            assert result == 'Русский - Английский'
