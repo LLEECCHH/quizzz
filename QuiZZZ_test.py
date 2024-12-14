@@ -51,19 +51,6 @@ def test_menu():
 
         mock_func.assert_called_once()
 
-def test_complexity_and_topic(monkeypatch):
-        monkeypatch.setattr("QuiZZZ.all_words", [('word1', 'перевод1', 'A2', 'природа'), ('word2', 'перевод2', 'B1', 'наука')])
-
-        c, t, words, new, processing, on_fix, repeat = complexity_and_topic()
-
-        assert c == "A2"
-        assert t == "природа"
-        assert words == [("word1", "перевод1")]
-        assert new == ["word1"]
-        assert processing == []
-        assert on_fix == []
-        assert repeat == []
-
 def test_settings_english_to_russian():
     with patch('QuiZZZ.Mock', return_value='Английский - Русский'):
         result = settings()

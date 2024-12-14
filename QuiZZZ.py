@@ -72,14 +72,14 @@ def settings():
         '''
         
         var1, var2, var3 = 'Английский - Русский', 'Русский - Английский', 'Случайно'
-        yield var1, var2, var3
+        # yield var1, var2, var3
         answer = Mock()
         if answer == var1:
                 return 'Английский - Русский'
         elif answer == var2:
                 return 'Русский - Английский'
         else:
-                return random.choice('Английский - Русский', 'Русский - Английский')
+                return random.choice(('Английский - Русский', 'Русский - Английский'))
 setts = settings()
 '''Выбранная настройка перевод'''
 
